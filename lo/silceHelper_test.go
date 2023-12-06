@@ -1,16 +1,10 @@
-package sliceHelper
+package lo
 
 import (
-	"fmt"
 	"github.com/samber/lo"
 	"strconv"
 	"testing"
 )
-
-func printResult[T any, R any](input T, result R) {
-	fmt.Println("input:", input)
-	fmt.Println("result:", result)
-}
 
 func TestFilter(t *testing.T) {
 	list := []int{1, 3, 2, 4}
